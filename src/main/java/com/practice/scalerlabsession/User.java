@@ -1,6 +1,6 @@
 package com.practice.scalerlabsession;
 
-public  class User {
+public abstract class User {
 
     private static int count = 0;
     private String userId;
@@ -45,5 +45,9 @@ public  class User {
         return "#####"+count;
 
     }
+
+    abstract void displayDashboard();
+   abstract boolean canBorrowBooks();
+
 
 }
