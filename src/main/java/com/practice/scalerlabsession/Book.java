@@ -10,10 +10,19 @@ public class Book implements Lendable {
     private String author;
     private boolean isAvailable;
 
+    public Book(String isbn,String title,String author){
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.isAvailable = true;
 
+    }
 
     @Override
     public boolean lend(User user) {
+        if(!isAvailable) {
+            isAvailable = false;
+        }
         isAvailable = false;
         return true;
     }
@@ -26,6 +35,10 @@ public class Book implements Lendable {
 
     @Override
     public boolean isAvailable() {
-        return false;
+
+        return isAvailable;
+    }
+    public String getTitle() {
+        return title;
     }
 }
