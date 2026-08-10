@@ -12,4 +12,14 @@ public class LibraryManagementSystem {
         this.bookInventory = new ArrayList<>();
         this.registeredUsers = new ArrayList<>();
     }
+
+    public void addBook(Book book){
+        bookInventory.add(book);
+
+    }
+
+    public void registerUser(User user) {
+        registeredUsers.add(user);
+    }
+
 }
