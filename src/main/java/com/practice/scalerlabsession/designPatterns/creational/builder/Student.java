@@ -9,6 +9,10 @@ public class Student {
     String email;
     String gender;
 
+    public static StudentBilder getBuilder(){
+        return new StudentBilder();
+    }
+
     public Student(StudentBilder builder){
         if(builder == null){
             throw new IllegalArgumentException("Builder cannot be null");
