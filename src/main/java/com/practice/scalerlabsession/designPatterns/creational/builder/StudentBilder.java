@@ -65,4 +65,9 @@ public class StudentBilder {
     String gender;
 
 
+    public Student build(){
+        return new Student(this);
+    }
+
+
 }

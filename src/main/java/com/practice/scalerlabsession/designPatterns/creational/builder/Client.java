@@ -29,7 +29,14 @@ public class Client {
 
         Student student = new Student(sb);*/
 
-
+Student s = Student.getBuilder()
+        .setAddress("sd")
+        .setAge(23)
+        .setEmail("sd@sd.com")
+        .setGender("Male")
+        .setName("John")
+        .setPhoneNumber("1234567890")
+        .build();
 
 
     }
